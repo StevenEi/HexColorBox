@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HexColorBox/static/css/main.770f1eee.css",
+    "main.js": "/HexColorBox/static/js/main.c4eeed54.js",
+    "index.html": "/HexColorBox/index.html",
+    "main.770f1eee.css.map": "/HexColorBox/static/css/main.770f1eee.css.map",
+    "main.c4eeed54.js.map": "/HexColorBox/static/js/main.c4eeed54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.770f1eee.css",
+    "static/js/main.c4eeed54.js"
+  ]
+}
