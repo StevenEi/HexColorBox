@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Box from "./Box.js";
+import Input from "./Input.js";
+import Title from "./Title.js";
 
 function App() {
+  const [colorValue, setColorValue] = useState("");
+  const [hexValue, setHexValue] = useState("");
+  const [isDarkText, setIsDarkText] = useState(true);
+  // const [fillAnimation, setFillAnimation] = useState(false);
+
+  // const toggleFillAnimation = () => {
+  //   setFillAnimation(!fillAnimation);
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title />
+      <Box
+        colorValue={colorValue}
+        hexValue={hexValue}
+        isDarkText={isDarkText}
+        // fillAnimation={fillAnimation}
+      />
+      <Input
+        colorValue={colorValue}
+        setColorValue={setColorValue}
+        setHexValue={setHexValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
+        // fillAnimation={fillAnimation}
+        // toggleFillAnimation={toggleFillAnimation}
+      />
     </div>
   );
 }
